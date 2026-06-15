@@ -1,0 +1,11 @@
+#barDeMenu a{
+    padding : 10px;
+    text-decoration: none; 
+    float: right;
+}
+#Presentation{
+  text-align: center;
+}
+h2, h3 ,p {
+ text-align: center;
+}
