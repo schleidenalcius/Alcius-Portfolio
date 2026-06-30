@@ -1,7 +1,18 @@
+:root{
+  --font-size: 18px;
+  --facteur-echelle: 1.125rem;
+  --petit-texte: var(--font-size);
+  --tres-petit-texte: calc(var(--petit-texte) / var(--facteur-echelle));
+  --texte-moyen: calc(var(--petit-texte) * var(--facteur-echelle));
+  --gros-texte: calc(var(--texte-moyen) * var(--facteur-echelle));
+  --tres-gros-texte: calc(var(--gros-texte) * var(--facteur-echelle));
+
+  font-family: 'Georgia', Times New Roman, Times, serif;
+}
 #barDeMenu a{
-    padding : 10px;
-    text-decoration: none; 
-    float: right;
+  padding : 10px;
+  text-decoration: none; 
+  float: right;
 }
 #Presentation{
   text-align: center;
@@ -9,3 +20,27 @@
 h2, h3 ,p {
  text-align: center;
 }
+h1{
+  font-size: var(--tres-gros-texte);
+}
+h2{
+  font-size: var(--gros-texte);
+}
+h3{
+  font-size: var(--texte-moyen);
+}
+p{
+  font-size: var(--petit-texte);
+}
+.liste{
+  text-align: center;
+}
+.liste ol{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/*
+:visited, :active :hover 
+pour les hyperliens
+*/
