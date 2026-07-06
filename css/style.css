@@ -1,6 +1,6 @@
-:root{
+:root {
   --font-size: 18px;
-  --facteur-echelle: 1.125rem;
+  --facteur-echelle: 1.2;
   --petit-texte: var(--font-size);
   --tres-petit-texte: calc(var(--petit-texte) / var(--facteur-echelle));
   --texte-moyen: calc(var(--petit-texte) * var(--facteur-echelle));
@@ -8,7 +8,18 @@
   --tres-gros-texte: calc(var(--gros-texte) * var(--facteur-echelle));
 
   font-family: 'Georgia', Times New Roman, Times, serif;
+
+  --cyan-pale: #Bee9e8;
+  --bleue-ciel-fonce: #62b6cb;
+  --bleue-sombre: #1b4965;
+  --bleue-clair: #Cae9ff;
+  --bleue-moyennement-lumineux: #5fa8d3;
 }
+body{
+  background-color: var(--cyan-pale);
+  color: var(--bleue-sombre);
+}
+
 #barDeMenu a{
   padding : 10px;
   text-decoration: none; 
@@ -17,7 +28,11 @@
 #Presentation{
   text-align: center;
 }
-h2, h3 ,p {
+audio{
+  display: block;
+  margin: 0 auto;
+}
+h2, h3, p, h4{
  text-align: center;
 }
 h1{
@@ -29,6 +44,9 @@ h2{
 h3{
   font-size: var(--texte-moyen);
 }
+h4{
+  font-size: var(--tres-petit-texte);
+}
 p{
   font-size: var(--petit-texte);
 }
@@ -39,6 +57,19 @@ p{
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.containerInformatiqueRealisation{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.carteRealisation{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+img{
+  border-radius: 20px;
 }
 /*
 :visited, :active :hover 
