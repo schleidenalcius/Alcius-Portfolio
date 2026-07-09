@@ -32,6 +32,11 @@ audio{
   display: block;
   margin: 0 auto;
 }
+
+.liste p, .liste h3{
+  text-align: left;
+}
+
 h2, h3, p, h4{
  text-align: center;
 }
@@ -50,14 +55,7 @@ h4{
 p{
   font-size: var(--petit-texte);
 }
-.liste{
-  text-align: center;
-}
-.liste ol{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+
 .containerInformatiqueRealisation{
   display: flex;
   flex-direction: row;
