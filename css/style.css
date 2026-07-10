@@ -16,10 +16,16 @@
   --bleue-moyennement-lumineux: #5fa8d3;
 }
 body{
-  background-color: var(--cyan-pale);
+  background: var(--cyan-pale);
+  background: linear-gradient(90deg,var(--cyan-pale) 10%, var(--bleue-ciel-fonce) 54%, var(--bleue-moyennement-lumineux) 88%);
   color: var(--bleue-sombre);
 }
-
+#WhoAmI{
+  margin-top: 4%;
+}
+#ApercuRealisation{
+  margin-top: 4%;
+}
 #barDeMenu a{
   padding : 10px;
   text-decoration: none; 
@@ -36,7 +42,19 @@ audio{
 .liste p, .liste h3{
   text-align: left;
 }
-
+#About{
+  margin-top: 20%;
+  text-align: center;
+  background-color: var(--bleue-sombre);
+  color: var(--bleue-clair);
+  padding: 2%;
+}
+#logoDansAbout{
+  margin-left : 40%;
+}
+#ApprentissageMathematique{
+  margin-top: 4%;
+}
 h2, h3, p, h4{
  text-align: center;
 }
@@ -55,7 +73,15 @@ h4{
 p{
   font-size: var(--petit-texte);
 }
+.objectifs-Journal{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.objectifs-Journal p{
+  padding: 2%;
 
+}
 .containerInformatiqueRealisation{
   display: flex;
   flex-direction: row;
@@ -66,6 +92,25 @@ p{
   flex-direction: column;
   align-items: center;
 }
+.containerMathematiqueApercuRealisation{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.carteMathematiqueApercuRealisation{
+  display:flex;
+}
+.carteMathematiqueApercuRealisation img{
+  border-radius: 20px 0 0 20px;
+}
+.carteSectionMath {
+  float: left;
+  width: 30%;
+  color : var(--bleue-clair);
+  background-color: var(--bleue-sombre);
+}
+
 img{
   border-radius: 20px;
 }
