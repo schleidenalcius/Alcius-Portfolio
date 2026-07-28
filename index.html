@@ -16,8 +16,8 @@
         <a href="index.html">Accueil</a>
     </div>
     <img src="images/logoPortfolio.png" alt="Logo du site de Portfolio, un A et un S." width="100px" height="100px">
-     <h1>Portfolio de Schleiden Alcius</h1>
-    <p><u>Ma musique du moment : Beethoven, String Quintet in C minor, Op. 104 - Andante cantabile con variazioni</u></p>
+     <h1 id="titre">Portfolio de Schleiden Alcius</h1>
+    <p id="maMusique" class="surligner"><u>Ma musique du moment : Beethoven, String Quintet in C minor, Op. 104 - Andante cantabile con variazioni</u></p>
     <h4>Musique provenant de la chaîne YouTube: Ludwig van Beethoven - Topic</h4>
 
     <audio controls>
@@ -26,11 +26,11 @@
     </audio>
    
     
-    <h2 id="WhoAmI">Qui suis-je?</h2>
+    <h2 id="WhoAmI" class="surligner">Qui suis-je?</h2>
     <p id="Presentation">Je m'appelle Schleiden Alcius, je suis un développeur web passionné. Un ami m'a d'abord initié au développement web, je fus intrigué par la simplicité du html comparer à du java que je connaissais. Par la suite, j'ai continué un peu par moi-même, en suivant les cours de la chaîne YouTube "BroCode". Finalement, je me suis inscrit à CyberCap pour approfondir les connaissances des sujets que je n'avais pas encore abordés, comme la sécurité informatique, les bases de données, et d'autres sujets liés au développement web.
     </p>
-    <h2 id="ApercuRealisation">Aperçu de mes réalisations</h2>
-    <h3><u>Informatique : sites web</u></h3>
+    <h2 id="ApercuRealisation" class="surligner">Aperçu de mes réalisations</h2>
+    <h3><u>Informatique : sites web faits tout seul</u></h3>
     <div class="containerInformatiqueRealisation">
         <div class="carteRealisation">
             <img src="images/logoPortfolio.png" alt="Logo du site de Portfolio, un A et un S." width="200px" height="200px">
@@ -38,30 +38,40 @@
             <p>Ce site sur lequel vous vous trouvez actuellement. Il a pour objectif de présenter ce que je fais en informatique et en mathématique.</p>
         </div>
         <div class="carteRealisation">
-            <img src="images/logoAltiusStar.png" alt="Logo du site Altius Star, un A en forme de livre avec la barre au mileu du en en forme de moustache." width="200px" height="200px">
+            <a target="_blank" href="https://altiusstar.de"><img src="images/logoAltiusStar.png" alt="Logo du site Altius Star, un A en forme de livre avec la barre au mileu du en en forme de moustache." width="200px" height="200px"></a>
             <h3>Altius Star</h3>
             <p>Site web de création de modèles fictifs pour rendre ma vie ludique. Je crée une compétence représentée par un personnage et je réalise les quêtes de ce personnage afin de faire croître cette compétence.</p>
         </div>
         <div class="carteRealisation">
             <img src="images/logoIsaflot.png" alt="Logo du site Isaflot, un hibou bleu marin avec un oeil jaune. Sur le coté gauche du hibou il y a un chemin qui suit la forme de sa tête." width="200px" height="200px">
             <h3>Isaflot</h3>
-            <p>Site web qui suit la progression de vos intelligences selon le nombre d'heure de pratique. Vous choisissez une intelligence et vous suivez votre progression.</p>
+            <p>À venir</p>
         </div>
-        <div class="carteRealisation">
-            <img src="images/logoForetVirtuelle.png" alt="Logo du site Forêt Virtuelle, deux hiboux qui discutent au sol dans une forêt durant la nuit." width="200px" height="200px">
-            <h3>Forêt Virtuelle</h3>
-            <p>Site pour approfondir ses connaissances en mathématiques en accédant à des histoires, des leçons et des exercices interactifs en format texte, images et audio .</p>
-        </div>
+    </div>
+    <h3><u>Informatique : sites web faits en équipe</u></h3>
+    <div class="carteRealisation">
+        <img src="images/logoForetVirtuelle.png" alt="Logo du site Forêt Virtuelle, deux hiboux qui discutent au sol dans une forêt durant la nuit." width="200px" height="200px">
+        <h3>Forêt Virtuelle</h3>
+        <p>À venir.</p>
     </div>
     <h3 id="ApprentissageMathematique"><u>Mathématique : Apprentissage</u></h3>
     <div class="containerMathematiqueApercuRealisation">
          <div class="carteMathematiqueApercuRealisation">
-            <a href=https://youtube.com/playlist?list=PL8yHsr3EFj53L8sMbzIhhXSAOpuZ1Fov8&si=Rf5eA4qlArYP7xDd><img src="images/leconsMathWeek1.png" alt="Miniature du cours de mathématique sur youtube" width="200px" height="200px"></a>
+            <a target="_blank" href=https://youtube.com/playlist?list=PL8yHsr3EFj53L8sMbzIhhXSAOpuZ1Fov8&si=Rf5eA4qlArYP7xDd><img src="images/leconsMathWeek1.png" alt="Miniature du cours de mathématique sur youtube" width="200px" height="200px"></a>
         <div class="carteSectionMath">
             <h3>Cours de théorie des nombres</h3>
             <p>Ma motivation pour ce cours est de comprendre les bases de la théorie des nombres et de comprendre comment elle s'applique dans la résolution de problèmes mathématiques ainsi qu'informatique.</p>
         </div>
-        </div>   
+        </div>  
+        
+        <div class="carteMathematiqueApercuRealisation">
+            <a target="_blank" href=https://youtube.com/playlist?list=PLbgaMIhjbmEnaH_LTkxLI7FMa2HsnawM_&si=cqPGprzS1DvUv2pK><img src="images/leconsMathCategory.png" alt="Miniature où il est écrit Category theory" width="200px" height="200px"></a>
+        <div class="carteSectionMath">
+            <h3>Cours de théorie des catégories</h3>
+            <p>Ma source de motivation pour cette leçon est de comprendre comment fonctionne les langages de programmation</p>
+        </div>
+        </div> 
+        
     </div>
 
 </body>

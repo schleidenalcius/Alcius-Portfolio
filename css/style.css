@@ -16,23 +16,54 @@
   --bleue-moyennement-lumineux: #5fa8d3;
 }
 body{
-  background: var(--cyan-pale);
-  background: linear-gradient(90deg,var(--cyan-pale) 10%, var(--bleue-ciel-fonce) 54%, var(--bleue-moyennement-lumineux) 88%);
-  color: var(--bleue-sombre);
+  background-image: url(../images/arrierePlanPrisDeMagnific.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 #WhoAmI{
   margin-top: 4%;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+
 }
+.surligner{
+  border-radius: 10px;
+  padding: 5px;
+  background-color: var(--cyan-pale);
+}
+
 #ApercuRealisation{
   margin-top: 4%;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
+#maMusique{
+  margin-top: 4%;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carteRealisation p{
+  width:25vw;
+}
+#titre{
+  width: 500px;
+}
+
 #barDeMenu a{
   padding : 10px;
   text-decoration: none; 
   float: right;
 }
 #Presentation{
-  text-align: center;
+  width:60vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 audio{
   display: block;
@@ -57,6 +88,7 @@ audio{
 }
 h2, h3, p, h4{
  text-align: center;
+
 }
 h1{
   font-size: var(--tres-gros-texte);
@@ -86,6 +118,7 @@ p{
   display: flex;
   flex-direction: row;
   gap: 20px;
+  justify-content: center;
 }
 .carteRealisation{
   display: flex;
@@ -94,25 +127,32 @@ p{
 }
 .containerMathematiqueApercuRealisation{
   display: flex;
-  flex-direction: column;
-
+  gap: 30px;
 }
 
 .carteMathematiqueApercuRealisation{
   display:flex;
+  justify-content: center;
 }
 .carteMathematiqueApercuRealisation img{
   border-radius: 20px 0 0 20px;
 }
 .carteSectionMath {
   float: left;
-  width: 30%;
-  color : var(--bleue-clair);
+  width: 30vw;
+  color : var(--cyan-pale);
   background-color: var(--bleue-sombre);
+  padding: 10px;
 }
 
 img{
   border-radius: 20px;
+}
+
+@media(max-width:1200px){
+  .containerMathematiqueApercuRealisation{
+    flex-direction: column;
+  }
 }
 /*
 :visited, :active :hover 
