@@ -12,6 +12,7 @@
   --cyan-pale: #Bee9e8;
   --bleue-ciel-fonce: #62b6cb;
   --bleue-sombre: #1b4965;
+  --rouge-Chemise:#FE6669;
   --bleue-clair: #Cae9ff;
   --bleue-moyennement-lumineux: #5fa8d3;
 }
@@ -29,10 +30,17 @@ body{
   margin-right: auto;
 
 }
-.surligner{
-  border-radius: 10px;
-  padding: 5px;
-  background-color: var(--cyan-pale);
+#carteQuiSuisJe{
+  display: flex;
+  flex-direction: column;
+}
+#reponseAQuiSuisJe{
+  width: 400px;
+}
+.photoEtQuiSuisJe{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #ApercuRealisation{
@@ -48,9 +56,6 @@ body{
   margin-right: auto;
 }
 
-.carteRealisation p{
-  width:25vw;
-}
 #titre{
   width: 500px;
 }
@@ -60,10 +65,12 @@ body{
   text-decoration: none; 
   float: right;
 }
-#Presentation{
-  width:60vw;
-  margin-left: auto;
-  margin-right: auto;
+
+.lesTextes{
+text-shadow: 1px 0px 0px var(--bleue-sombre);
+background: rgba(147, 170, 182, 0);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
 }
 audio{
   display: block;
@@ -92,18 +99,20 @@ h2, h3, p, h4{
 }
 h1{
   font-size: var(--tres-gros-texte);
+  color: var(--bleue-sombre);
 }
 h2{
   font-size: var(--gros-texte);
+  color: var(--bleue-sombre);
 }
 h3{
   font-size: var(--texte-moyen);
+  color: var(--bleue-sombre);
 }
-h4{
-  font-size: var(--tres-petit-texte);
-}
+
 p{
   font-size: var(--petit-texte);
+  color: var(--bleue-sombre);
 }
 .objectifs-Journal{
   display: flex;
@@ -115,10 +124,67 @@ p{
 
 }
 .containerInformatiqueRealisation{
-  display: flex;
-  flex-direction: row;
+  display: grid;
   gap: 20px;
-  justify-content: center;
+  width: 50%;
+  height: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-areas: 
+    "Qui Site1 Site2"
+    "Qui Site3 Site4";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.containerInformatiqueRealisation div.Qui{
+  grid-area: Qui;
+}
+.Qui img{
+  border: 5px solid var(--rouge-Chemise);
+  border-radius: 20px;
+}
+.containerInformatiqueRealisation div.Site1{
+  grid-area: Site1;
+  border: 5px solid var(--rouge-Chemise);
+  border-radius: 20px;
+
+  background: rgba(147, 170, 182, 0);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+}
+.containerInformatiqueRealisation div.Site2{
+  grid-area: Site2;
+  border: 5px solid var(--rouge-Chemise);
+  border-radius: 20px;
+
+  background: rgba(147, 170, 182, 0);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+}
+.containerInformatiqueRealisation h3{
+  background-color: var(--rouge-Chemise);
+  padding: 3%;
+  border-radius: 10px;
+
+  
+}
+.containerInformatiqueRealisation div.Site3{
+  grid-area: Site3;
+  border: 5px solid var(--rouge-Chemise);
+  border-radius: 20px;
+
+  background: rgba(147, 170, 182, 0);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+}
+.containerInformatiqueRealisation div.Site4{
+  grid-area: Site4;
+  border: 5px solid var(--rouge-Chemise);
+  border-radius: 20px;
+
+  background: rgba(147, 170, 182, 0);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
 }
 .carteRealisation{
   display: flex;
@@ -127,6 +193,7 @@ p{
 }
 .containerMathematiqueApercuRealisation{
   display: flex;
+  flex-direction: column;
   gap: 30px;
 }
 
@@ -140,9 +207,14 @@ p{
 .carteSectionMath {
   float: left;
   width: 30vw;
-  color : var(--cyan-pale);
   background-color: var(--bleue-sombre);
   padding: 10px;
+}
+.carteSectionMath p{
+  color : var(--cyan-pale);
+}
+.carteSectionMath h3{
+  color : var(--cyan-pale);
 }
 
 img{
