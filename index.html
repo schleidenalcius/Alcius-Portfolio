@@ -8,24 +8,17 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="barDeMenu">
-        <a href="">À propos</a>       
-        <a href="">Contact</a>
-        <a href="journal.html">Journal</a>
-        <a href="realisations.html">Réalisations</a>
-        <a href="index.html">Accueil</a>
-    </div>
-    <img src="images/logoPortfolio.png" alt="Logo du site de Portfolio, un A et un S." width="100px" height="100px">
-    <h1 id="titre"><span>Portfolio</span> de Schleiden Alcius</h1>
-    <p id="maMusique" class="lesTextes"><u>Ma musique du moment : Beethoven, String Quintet in C minor, Op. 104 - Andante cantabile con variazioni</u></p>
-    <h3>Musique provenant de la chaîne YouTube: Ludwig van Beethoven - Topic</h3>
-    
-    <audio controls>
-        <source src="audio/String-Quintet-C-minor-Op-104_Andante-cantabile-con-variazioni.mp3" type="audio/mpeg">
-        Votre navigateur ne supporte pas la lecture audio.
-    </audio>
-    
-    
+    <header>
+        <div class="enTete">
+            <a href="index.html"><img src="images/logoPortfolio.png" alt="Logo du site de Portfolio, un A et un S." width="100px" height="100px"></a>
+            <h1 id="titre">Mon <span>Portfolio</span></h1>
+        </div>
+        <div id="barDeMenu">     
+            <a href="journal.html">Journal</a>
+            <a href="#deuxProjetsPreferes">Réalisations</a>
+            <a href="index.html" class="active">Accueil</a>
+        </div>
+    </header>
     <h2 id="ApercuRealisation" class="lesTextes">Mes réalisations</h2>
     <h3><u>Informatique : sites web faits tout seul</u></h3>
 
@@ -40,28 +33,30 @@
                 </p>
             </div>
         </div>
-        
+    </div>
+    <div class="lesSites">
         <div class="carteRealisation Site1">
             <img src="images/logoPortfolio.png" alt="Logo du site de Portfolio, un A et un S." width="200px" height="200px">
             <h3>Portfolio</h3>
-            <p style="width: 200px;" class="lesTextes">Ce site sur lequel vous vous trouvez actuellement. Il a pour objectif de présenter ce que je fais en informatique et en mathématique.</p>
+            <p style="width: 300px;" class="lesTextes">Ce site sur lequel vous vous trouvez actuellement. Il a pour objectif de présenter ce que je fais en informatique et en mathématique.</p>
         </div>
         <div class="carteRealisation Site2">
             <a target="_blank" href="https://altiusstar.de"><img src="images/logoAltiusStar.png" alt="Logo du site Altius Star, un A en forme de livre avec la barre au mileu du en en forme de moustache." width="200px" height="200px"></a>
             <h3>Altius Star</h3>
-            <p style="width: 200px;" class="lesTextes">Site web de création de modèles fictifs pour rendre ma vie ludique. Je crée une compétence représentée par un personnage et je réalise les quêtes de ce personnage afin de faire croître cette compétence.</p>
+            <p style="width: 300px;" class="lesTextes">Site web de création de modèles fictifs pour rendre ma vie ludique. Je crée une compétence représentée par un personnage et je réalise les quêtes de ce personnage afin de faire croître cette compétence.</p>
         </div> 
         <div class="carteRealisation Site3">
-          <a target="_blank" href="https://vrais.de"><img src="images/logoVrais.svg" alt="Logo du site les vrais qui est la lettre v en jaune." width="200px" height="200px"></a>
-          <h3>Vrais <br>(avec IA)</h3>
-          <p class="lesTextes">Vrais est un site où se trouve les grands esprits qui ont façonné notre manière de penser. Prensentement, il y en a 22, les autres sont à venir.</p>
+        <a target="_blank" href="https://vrais.de"><img src="images/logoVrais.png" alt="Logo du site les vrais qui est la lettre v en jaune." width="200px" height="200px"></a>
+        <h3>Vrais <br>(avec IA)</h3>
+        <p style="width: 300px;" class="lesTextes">Vrais est un site où se trouve les grands esprits qui ont façonné notre manière de penser. Prensentement, il y en a 22, les autres sont à venir.</p>
         </div>
         <div class="carteRealisation Site4">
             <img src="images/logoForetVirtuelle.png" alt="Logo du site Forêt Virtuelle, deux hiboux qui discutent au sol dans une forêt durant la nuit." width="200px" height="200px">
             <h3>Forêt Virtuelle <br>(en équipe)</h3>
-            <p class="lesTextes">À venir.</p>
+            <p style="width: 300px;" class="lesTextes">À venir.</p>
         </div>
-    </div>    
+    </div>
+    
     
     <h3 id="ApprentissageMathematique"><u>Mathématique : Apprentissage</u></h3>
     <div class="containerMathematiqueApercuRealisation">
@@ -82,6 +77,37 @@
         </div> 
         
     </div>
+    
+    <h3 id="projetsDansAccueil"><u>Mes deux réalistions préférés</u></h3>
+    <div id="deuxProjetsPreferes">
+        <ul id="projetsPreferes"> 
+                <li class="projetPref">
+                    <h3>Vrais (Septembre 2026)</h3>    
+                    <p>Vrais est un site fait avec l'intelligence artificielle en tant qu'exercice, dans le cadre de ma formation, pour apprendre à l'utiliser. C'est un site qui regroupe les grands esprits qui ont marqué l'histoire. Je me suis rendu compte que l'IA réalisait des sites avec des notions beaucoup plus poussées. Je me suis mis à étudier les notions qu'il utilise pour réaliser un site aussi beau que Vrais.  
+                    </p>
+                    <a target="_blank" href="https://vrais.de"><img src="images/logoVrais.png" alt="Logo du site les vrais qui est la lettre v en jaune." width="150px" height="150px"></a>
+                </li>
+                <li class="projetPref">
+                    <h3>Altius Star (Depuis Juillet 2026)</h3>    
+                    <p>Site web où je développe des personnages fictifs, leurs objectifs seront réalisés par moi. En tout il y a 4 personnages qui ont des défauts, des qualités, des peurs, des forces et faiblesses. Il est question de surmonter leurs peurs, renforcer leurs faiblesses et surtout trvailler leurs forces. 
+                    </p>
+                    <a target="_blank" href="https://altiusstar.de"><img src="images/logoAltiusStar.png" alt="Logo du site Altius Star, un A en forme de livre avec la barre au mileu du en en forme de moustache." width="200px" height="200px"></a>
+                </li> 
+                <li class="projetPref" id="dernierLienDansPreferes"><a href="realisations.html">En savoir plus</a></li>
 
+        </ul> 
+    </div>
+
+    <footer id="contact">
+        <div class="divContact">
+            <h2>Me rejoindre</h2>
+            <p>schleidenalcius@gmail.com</p>
+        </div>
+        <div id="barDeMenu">
+            <a href="journal.html">Journal</a>
+            <a href="#deuxProjetsPreferes">Réalisations</a>
+            <a class="active" href="index.html">Accueil</a>
+        </div>
+    </footer>
 </body>
 </html>

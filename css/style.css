@@ -14,11 +14,21 @@
   --bleue-sombre: #1b4965;
   --beige:#f2e8cf;
   --bleue-clair: #Cae9ff;
+  --vert-Succes:#90a955;
+  --rouge-Rate:#bb4430;
   --bleue-moyennement-lumineux: #5fa8d3;
 }
 body{
   /* background-color: var(--bleue-clair); */
   background-color: var(--beige);
+  margin: 0;
+}
+.active{
+  text-decoration: underline;
+}
+header{
+  display: flex;
+  justify-content: space-between;
 }
 #WhoAmI{
   margin-top: 4%;
@@ -30,6 +40,9 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.enTete{
+  display: flex;
 }
 #reponseAQuiSuisJe{
   width: 400px;
@@ -54,10 +67,11 @@ body{
 #titre{
   width: 500px;
 }
-#barDeMenu a{
+a{
   padding : 10px;
   text-decoration: none; 
   float: right;
+  color: var(--bleue-sombre);
 }
 audio{
   display: block;
@@ -73,7 +87,7 @@ audio{
   margin-top: 4%;
 }
 span{
-  color:var(--bleue-sombre);
+  color:var(--bleue-moyennement-lumineux);
 }
 h2, h3, p, h4{
  text-align: center;
@@ -94,53 +108,45 @@ p{
   font-size: var(--petit-texte);
   color: var(--bleue-sombre);
 }
-.objectifs-Journal{
+
+.containerInformatiqueRealisation{
   display: flex;
   flex-direction: column;
-  gap: 10px;
-}
-.objectifs-Journal p{
-  padding: 2%;
-
-}
-.containerInformatiqueRealisation{
-  display: grid;
   gap: 20px;
   width: 50%;
   height: 15%;
   margin-left: auto;
   margin-right: auto;
-  grid-template-areas: 
-    "Qui Site1 Site2"
-    "Qui Site3 Site4";
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  align-items: center;
+}
+.lesSites{
+  display: grid;
+ margin-left: auto;
+ margin-right: auto;
+   grid-template-areas: 
+    "Site1 Site2"
+    "Site3 Site4";
 }
 .containerInformatiqueRealisation div.Qui{
   grid-area: Qui;
 }
 .Qui img{
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .containerInformatiqueRealisation div.Site1{
   grid-area: Site1;
-  border-radius: 20px;
 }
 .containerInformatiqueRealisation div.Site2{
   grid-area: Site2;
-  border-radius: 20px;
 }
 .containerInformatiqueRealisation h3{
   padding: 3%;
-  border-radius: 10px;  
 }
 .containerInformatiqueRealisation div.Site3{
   grid-area: Site3;
-  border-radius: 20px;
 }
 .containerInformatiqueRealisation div.Site4{
   grid-area: Site4;
-  border-radius: 20px;
 }
 .carteRealisation{
   display: flex;
@@ -151,61 +157,144 @@ p{
   display: flex;
   flex-direction: column;
   gap: 30px;
+  background-color: var(--bleue-sombre);   
 }
 .carteMathematiqueApercuRealisation{
   display:flex;
   justify-content: center;
 }
 .carteMathematiqueApercuRealisation img{
-  border-radius: 20px 0 0 20px;
+  border-radius: 10px 0 0 10px;
 }
 .carteSectionMath {
   float: left;
   width: 30vw;
-  background-color: var(--bleue-sombre);
+  background-color: var(--bleue-moyennement-lumineux);
+  border-radius: 0 10px 10px 0;
   padding: 10px;
 }
+.carteMathematiqueApercuRealisation {
+  margin-top: 2%;
+  margin-bottom: 2%;
+
+}
 .carteSectionMath p{
-  color : var(--cyan-pale);
+  color : var(--bleue-sombre);
 }
 .carteSectionMath h3{
-  color : var(--cyan-pale);
+  color :var(--bleue-sombre) ;
 }
 img{
-  border-radius: 20px;
+  border-radius: 10px;
+}
+#projetsDansAccueil{
+  margin-top: 6%;
+}
+#projetsPreferes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+.projetPref{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30vw;
+  padding: 30px;
 }
 
-
 /*Page de réalisations*/
+.liste{
+  margin-bottom: 10%;
+}
 #mesListes{
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 20px;
   justify-content: center;
 }
 .unElementDeMaListe{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 30vw;
   padding: 30px;
   border-radius: 20px;
  
 }
+footer{
+  display: flex;
+  background-color: var(--bleue-ciel-fonce);
+  justify-content: space-evenly;
+  position: fixed;
+  bottom:0;
+  width: 100vw;
+}
 
+/*Page de journal*/
+.objectifs-Journal{
+  display: flex;
+  justify-content: center;
+}
+.objectifRate{
+  color: var(--rouge-Rate);
+}
 /*Media Queries pour toutes les pages*/
 @media(max-width:600px){
+  body{
+    margin: 0;
+    padding:0;
+  }
   .containerMathematiqueApercuRealisation{
     align-items: center;
   }
   #mesListes{
     flex-direction: column;
     align-items: center;
+    margin-bottom: 40%;
+  }
+  header{
+    flex-direction: column;
   }
   .carteSectionMath{
-     width: 315px;
-     height: 275px;
+    width: 315px;
+    height: 275px;
+  }
+  #barDeMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .lesSites{
+    display: flex;
+    flex-direction: column;
+  }
+  .unElementDeMaListe{
+    width: 100vw;
+    padding: 2%;
+  }
+  .objectifs-Journal{
+    flex-direction: column;
+    align-items: center;
+  }
+  #photoDeProfil{
+    height: 300px;
+  }
+  .projetPref{
+    width: 100vw;
+    padding: 3%;
   }
   .carteMathematiqueApercuRealisation img{
-    border-radius: 20px 20px 0 0;
+    border-radius: 10px 10px 0 0;
     width: 323px;
     height:200px;
+  }
+  #dernierLienDansPreferes{
+    margin-bottom: 20%;
   }
   .carteMathematiqueApercuRealisation{
     flex-direction: column;
