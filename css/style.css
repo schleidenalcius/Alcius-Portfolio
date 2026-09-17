@@ -226,6 +226,14 @@ img{
   border-radius: 20px;
  
 }
+.imageShadow{
+  filter:none;
+  transition: filter 0.7s ease;
+}
+.imageShadow.visible{
+  filter: drop-shadow(5px 5px 10px var(--bleue-sombre));
+  transform: scale(1.45);
+}
 footer{
   display: flex;
   background-color: var(--bleue-ciel-fonce);
